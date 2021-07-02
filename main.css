@@ -1,0 +1,124 @@
+:root { /* Da Music PLayer Things */
+  --plyr-font-family: "Poppins", sans-serif;
+  --plyr-color-main: #0f0f0f;
+  --plyr-audio-controls-background: transparent;
+  --plyr-audio-control-color: #fff;
+  --plyr-audio-control-background-hover: #252525;
+}
+.plyr--audio .plyr__controls {
+  margin-right: 500px;
+}
+.plyr--audio {
+  border-radius: 8px;
+}
+
+:root { /* Main Color */
+  --background-main: #141414;
+  --background-light: #252525;
+  --border-radius: 18px;
+
+  --color-main: #E8E8E8;
+  --color-hover: #3F66CA;
+
+  --font-logo: "Poppins", sans-serif;
+  --font-connections: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  background-color: var(--background-main);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--background-light);
+}
+
+body {
+  margin: 0;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-music {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 31vh;
+  right: 61vh;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.50));
+}
+
+.site-mount {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right top, #141414, #252525);
+}
+.content-mount {
+  animation: bottom-up 850ms ease-in-out;
+}
+@keyframes bottom-up {
+    0% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    100% {
+        opacity: 1;
+    transform: none;
+    }
+}
+.default-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: var(--color-main);
+  user-select: none;
+}
+.text-logo {
+  font-family: var(--font-logo);
+  font-weight: bold;
+  font-size: 100px;
+}
+.connection {
+    display: flex;
+  align-items: center;
+  font-family: var(--font-connections);
+  font-size: 15px;
+  transition: all 200ms linear;
+}
+.connections {
+  position: relative;
+  display: flex;
+  bottom: 9px;
+  padding-bottom: 10px;
+}
+.connection-logo {
+    display: flex;
+  margin-right: 5px;
+}
+.connection-text {
+  font-size: 16px;
+}
+.connection-discord {
+  user-select: all;
+  margin-right: 10px;
+}
+.connection-github {;
+  color: inherit;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.connection-themes {
+  color: inherit;
+  text-decoration: none;
+}
+.connection:hover,
+.connection:active {
+  color: var(--color-hover);
+}
