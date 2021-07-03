@@ -36,6 +36,13 @@ body {
   margin: 0;
 }
 
+body a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* Important!!  */
+
 #particles-js {
   position: absolute;
   width: 100%;
@@ -85,6 +92,21 @@ body {
   font-weight: bold;
   font-size: 100px;
 }
+.text-logo:hover {
+  animation-duration: 0.01s;
+  animation-name: textflicker;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}
+
 .connection {
     display: flex;
   align-items: center;
